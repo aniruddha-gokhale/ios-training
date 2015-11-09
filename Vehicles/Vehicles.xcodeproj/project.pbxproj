@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475A9B151BF0A24900EE8D1B /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A9B121BF0A24900EE8D1B /* Car.m */; };
+		475A9B161BF0A24900EE8D1B /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A9B141BF0A24900EE8D1B /* Vehicle.m */; };
+		47A87E461BF0A7B600DA45C9 /* Bike.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A87E451BF0A7B600DA45C9 /* Bike.m */; };
+		47A87E491BF0B2A600DA45C9 /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A87E481BF0B2A600DA45C9 /* Truck.m */; };
 		F5961A2217DD013A008D39EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2117DD013A008D39EA /* Foundation.framework */; };
 		F5961A2417DD013A008D39EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2317DD013A008D39EA /* CoreGraphics.framework */; };
 		F5961A2617DD013A008D39EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2517DD013A008D39EA /* UIKit.framework */; };
@@ -22,7 +26,6 @@
 		F5961A4617DD013A008D39EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2517DD013A008D39EA /* UIKit.framework */; };
 		F5961A4E17DD013A008D39EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5961A4C17DD013A008D39EA /* InfoPlist.strings */; };
 		F5961A5017DD013A008D39EA /* VehiclesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5961A4F17DD013A008D39EA /* VehiclesTests.m */; };
-		F5961A5B17DD04AF008D39EA /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = F5961A5A17DD04AF008D39EA /* Vehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		475A9B111BF0A24900EE8D1B /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		475A9B121BF0A24900EE8D1B /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		475A9B131BF0A24900EE8D1B /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		475A9B141BF0A24900EE8D1B /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		47A87E441BF0A7B600DA45C9 /* Bike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bike.h; sourceTree = "<group>"; };
+		47A87E451BF0A7B600DA45C9 /* Bike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bike.m; sourceTree = "<group>"; };
+		47A87E471BF0B2A600DA45C9 /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Truck.h; sourceTree = "<group>"; };
+		47A87E481BF0B2A600DA45C9 /* Truck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Truck.m; sourceTree = "<group>"; };
 		F5961A1E17DD013A008D39EA /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5961A2117DD013A008D39EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5961A2317DD013A008D39EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +68,6 @@
 		F5961A4B17DD013A008D39EA /* VehiclesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VehiclesTests-Info.plist"; sourceTree = "<group>"; };
 		F5961A4D17DD013A008D39EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5961A4F17DD013A008D39EA /* VehiclesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesTests.m; sourceTree = "<group>"; };
-		F5961A5917DD04AF008D39EA /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
-		F5961A5A17DD04AF008D39EA /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +127,19 @@
 		F5961A2717DD013A008D39EA /* Vehicles */ = {
 			isa = PBXGroup;
 			children = (
+				475A9B111BF0A24900EE8D1B /* Car.h */,
+				475A9B121BF0A24900EE8D1B /* Car.m */,
+				475A9B131BF0A24900EE8D1B /* Vehicle.h */,
+				475A9B141BF0A24900EE8D1B /* Vehicle.m */,
+				47A87E471BF0B2A600DA45C9 /* Truck.h */,
+				47A87E481BF0B2A600DA45C9 /* Truck.m */,
 				F5961A3017DD013A008D39EA /* AppDelegate.h */,
 				F5961A3117DD013A008D39EA /* AppDelegate.m */,
 				F5961A3317DD013A008D39EA /* Main.storyboard */,
-				F5961A5917DD04AF008D39EA /* Vehicle.h */,
-				F5961A5A17DD04AF008D39EA /* Vehicle.m */,
 				F5961A3617DD013A008D39EA /* VehicleListTableViewController.h */,
 				F5961A3717DD013A008D39EA /* VehicleListTableViewController.m */,
+				47A87E441BF0A7B600DA45C9 /* Bike.h */,
+				47A87E451BF0A7B600DA45C9 /* Bike.m */,
 				F5961A3917DD013A008D39EA /* VehicleDetailViewController.h */,
 				F5961A3A17DD013A008D39EA /* VehicleDetailViewController.m */,
 				F5961A3C17DD013A008D39EA /* Images.xcassets */,
@@ -259,11 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475A9B151BF0A24900EE8D1B /* Car.m in Sources */,
 				F5961A3217DD013A008D39EA /* AppDelegate.m in Sources */,
+				475A9B161BF0A24900EE8D1B /* Vehicle.m in Sources */,
+				47A87E491BF0B2A600DA45C9 /* Truck.m in Sources */,
 				F5961A3817DD013A008D39EA /* VehicleListTableViewController.m in Sources */,
+				47A87E461BF0A7B600DA45C9 /* Bike.m in Sources */,
 				F5961A2E17DD013A008D39EA /* main.m in Sources */,
 				F5961A3B17DD013A008D39EA /* VehicleDetailViewController.m in Sources */,
-				F5961A5B17DD04AF008D39EA /* Vehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +484,7 @@
 				F5961A5517DD013A008D39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5961A5617DD013A008D39EA /* Build configuration list for PBXNativeTarget "VehiclesTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +493,7 @@
 				F5961A5817DD013A008D39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
