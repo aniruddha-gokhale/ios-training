@@ -12,5 +12,6 @@
 
 @property(nonatomic,assign)NSInteger cargoCapicityCubicfeet;
 
-
+//factory method
++(Truck *)truckWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels cargoCapacityCubicFeet:(NSInteger)cargoCapacityCubicFeet;
 @end

@@ -91,4 +91,19 @@
     return carDetails;
 }
 
+#pragma mark - Factory Method
++(Car *)carWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource numberOfDoors:(NSInteger)numberOfDoors convertible:(BOOL)isConvertible hatchback:(BOOL)isHatchback sunroof:(BOOL)hasSunroof
+{
+   
+    Car *newCar = [Car vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:powerSource wheels:4];
+    
+    //Set the car-specific properties using the passed-in variables.
+    newCar.numberOfDoors = numberOfDoors;
+    newCar.isConvertible = isConvertible;
+    newCar.isHatchback = isHatchback;
+    newCar.hasSunroof = hasSunroof;
+    
+    //Return the fully instantiated Car object.
+    return newCar;
+}
 @end

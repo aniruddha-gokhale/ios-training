@@ -11,5 +11,7 @@
 @interface Bike : Vehicle
 
 @property(nonatomic,strong)NSString *engineNoise;
+//factorey method
 
++(Bike *)BikeWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise;
 @end

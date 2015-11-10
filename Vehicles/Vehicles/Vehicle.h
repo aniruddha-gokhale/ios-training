@@ -30,4 +30,10 @@
 //method for vehicle details
 -(NSString *)vehicleDetailsString;
 
+
+//factory methdod
+
++(instancetype)vehicleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource
+                             wheels:(NSInteger)numberOfWheels;
+
 @end

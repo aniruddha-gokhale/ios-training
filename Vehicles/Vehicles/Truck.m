@@ -82,4 +82,16 @@
     return truckDetails;
 }
 
+#pragma mark Factory method
+
++(Truck *)truckWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels cargoCapacityCubicFeet:(NSInteger)cargoCapacityCubicFeet{
+    
+    Truck *newTruck=[Truck vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:powerSource wheels:numberOfWheels];
+    
+    newTruck.cargoCapicityCubicfeet = cargoCapacityCubicFeet;
+    
+    
+    return newTruck;
+}
+
 @end

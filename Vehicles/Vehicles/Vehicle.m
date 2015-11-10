@@ -68,4 +68,19 @@
     return basicDetailsString;
 }
 
+#pragma mark- Factory Method
++(instancetype)vehicleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels{
+    
+    Vehicle *newVehicle=[[self alloc]init];
+    newVehicle.brandName = brandName;
+    newVehicle.modelName = modelName;
+    newVehicle.modelYear = modelYear;
+    newVehicle.powerSource = powerSource;
+    newVehicle.numberOfWheels = numberOfWheels;
+    
+    
+    return newVehicle;
+}
+
+
 @end

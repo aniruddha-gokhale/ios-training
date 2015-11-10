@@ -59,4 +59,17 @@
     
     return BikeDetails;
 }
+
+#pragma mark Factory Method
+
++(Bike *)BikeWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise{
+    
+    Bike *newBike = [Bike vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:@"gas engine" wheels:2];
+    
+    newBike.engineNoise=engineNoise;
+    
+    return newBike;
+    
+}
+
 @end
