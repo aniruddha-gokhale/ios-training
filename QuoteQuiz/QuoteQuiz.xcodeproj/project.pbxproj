@@ -15,6 +15,8 @@
 		47706EE61BF9C90200C2E2C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47706EE51BF9C90200C2E2C5 /* Images.xcassets */; };
 		47706EE91BF9C90200C2E2C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47706EE71BF9C90200C2E2C5 /* LaunchScreen.xib */; };
 		47706EF51BF9C90200C2E2C5 /* QuoteQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47706EF41BF9C90200C2E2C5 /* QuoteQuizTests.m */; };
+		47706F001BF9D5C400C2E2C5 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 47706EFF1BF9D5C400C2E2C5 /* Quiz.m */; };
+		47706F021BF9E89600C2E2C5 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47706F011BF9E89600C2E2C5 /* quotes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		47706EEE1BF9C90200C2E2C5 /* QuoteQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoteQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47706EF31BF9C90200C2E2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47706EF41BF9C90200C2E2C5 /* QuoteQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuoteQuizTests.m; sourceTree = "<group>"; };
+		47706EFE1BF9D5C400C2E2C5 /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		47706EFF1BF9D5C400C2E2C5 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		47706F011BF9E89600C2E2C5 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +92,10 @@
 				47706EDA1BF9C90200C2E2C5 /* AppDelegate.m */,
 				47706EDF1BF9C90200C2E2C5 /* ViewController.h */,
 				47706EE01BF9C90200C2E2C5 /* ViewController.m */,
+				47706F011BF9E89600C2E2C5 /* quotes.plist */,
 				47706EE21BF9C90200C2E2C5 /* Main.storyboard */,
+				47706EFE1BF9D5C400C2E2C5 /* Quiz.h */,
+				47706EFF1BF9D5C400C2E2C5 /* Quiz.m */,
 				47706EE51BF9C90200C2E2C5 /* Images.xcassets */,
 				47706EE71BF9C90200C2E2C5 /* LaunchScreen.xib */,
 				47706EDC1BF9C90200C2E2C5 /* QuoteQuiz.xcdatamodeld */,
@@ -205,6 +213,7 @@
 				47706EE41BF9C90200C2E2C5 /* Main.storyboard in Resources */,
 				47706EE91BF9C90200C2E2C5 /* LaunchScreen.xib in Resources */,
 				47706EE61BF9C90200C2E2C5 /* Images.xcassets in Resources */,
+				47706F021BF9E89600C2E2C5 /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47706F001BF9D5C400C2E2C5 /* Quiz.m in Sources */,
 				47706EDB1BF9C90200C2E2C5 /* AppDelegate.m in Sources */,
 				47706EDE1BF9C90200C2E2C5 /* QuoteQuiz.xcdatamodeld in Sources */,
 				47706EE11BF9C90200C2E2C5 /* ViewController.m in Sources */,
