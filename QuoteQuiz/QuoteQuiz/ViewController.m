@@ -47,7 +47,13 @@
 
 - (void)quizDone
 {
-    // More later
+    if (self.quiz.correctCount) {
+        self.statusLabel.text = [NSString stringWithFormat:@"Quiz Done - Score %ld%%", self.quiz.quizCount / self.quiz.correctCount];
+    } else {
+        self.statusLabel.text = @"Quiz Done - Score: 0%";
+    }
+    [self.startButton setTitle:@"Try Again" forState:UIControlStateNormal];
+    self.quizIndex = 999;
 }
 
 - (void)nextQuizItem

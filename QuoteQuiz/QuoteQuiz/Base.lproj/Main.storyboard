@@ -81,6 +81,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s0a-hv-OfB">
+                                <rect key="frame" x="251" y="532" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96989094319334579" green="1" blue="0.37315461094668823" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" red="0.38892662617211571" green="0.57019286733637853" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lzy-Ee-PTQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct: Incorrect:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="htP-Ee-AGJ">
+                                <rect key="frame" x="32" y="536" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69467870916186203" green="1" blue="0.76390056726399114" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -93,6 +113,7 @@
                         <outlet property="answer3Button" destination="EHV-Jc-syK" id="6Yq-94-Dbt"/>
                         <outlet property="answer3Label" destination="FPa-69-eY4" id="G8q-cl-ofw"/>
                         <outlet property="questionLabel" destination="wCb-aK-fMA" id="6rD-3C-1VP"/>
+                        <outlet property="statusLabel" destination="htP-Ee-AGJ" id="Jmg-7v-PiF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
