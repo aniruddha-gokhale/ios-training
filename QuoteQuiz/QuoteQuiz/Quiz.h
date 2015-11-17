@@ -20,6 +20,9 @@
 @property (nonatomic, readonly, strong) NSString * ans2;
 @property (nonatomic, readonly, strong) NSString * ans3;
 
+@property (nonatomic, assign) NSInteger tipCount;
+@property (nonatomic, strong) NSString * tip;
+
 -(id) initWithQuiz:(NSString*)plistName; // Previous Method
 -(void) nextQuestion: (NSUInteger) idx;
 -(BOOL) checkQuestion: (NSUInteger) question forAnswer: (NSUInteger) answer;

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuizTipViewController.h"
 
 @class Quiz;
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <QuizTipViewControllerDelegate>
 @property (nonatomic, assign) NSInteger quizIndex;
 @property (nonatomic, strong) Quiz * quiz;
 

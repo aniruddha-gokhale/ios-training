@@ -17,6 +17,7 @@
 		47706EF51BF9C90200C2E2C5 /* QuoteQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47706EF41BF9C90200C2E2C5 /* QuoteQuizTests.m */; };
 		47706F001BF9D5C400C2E2C5 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 47706EFF1BF9D5C400C2E2C5 /* Quiz.m */; };
 		47706F021BF9E89600C2E2C5 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47706F011BF9E89600C2E2C5 /* quotes.plist */; };
+		47C72D851BFB48B40050C533 /* QuizTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C72D841BFB48B40050C533 /* QuizTipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		47706EFE1BF9D5C400C2E2C5 /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		47706EFF1BF9D5C400C2E2C5 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		47706F011BF9E89600C2E2C5 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
+		47C72D831BFB48B40050C533 /* QuizTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizTipViewController.h; sourceTree = "<group>"; };
+		47C72D841BFB48B40050C533 /* QuizTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizTipViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 		47706ED41BF9C90200C2E2C5 /* QuoteQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				47C72D831BFB48B40050C533 /* QuizTipViewController.h */,
+				47C72D841BFB48B40050C533 /* QuizTipViewController.m */,
 				47706ED91BF9C90200C2E2C5 /* AppDelegate.h */,
 				47706EDA1BF9C90200C2E2C5 /* AppDelegate.m */,
 				47706EDF1BF9C90200C2E2C5 /* ViewController.h */,
@@ -234,6 +239,7 @@
 				47706F001BF9D5C400C2E2C5 /* Quiz.m in Sources */,
 				47706EDB1BF9C90200C2E2C5 /* AppDelegate.m in Sources */,
 				47706EDE1BF9C90200C2E2C5 /* QuoteQuiz.xcdatamodeld in Sources */,
+				47C72D851BFB48B40050C533 /* QuizTipViewController.m in Sources */,
 				47706EE11BF9C90200C2E2C5 /* ViewController.m in Sources */,
 				47706ED81BF9C90200C2E2C5 /* main.m in Sources */,
 			);
@@ -426,6 +432,7 @@
 				47706EFA1BF9C90200C2E2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47706EFB1BF9C90200C2E2C5 /* Build configuration list for PBXNativeTarget "QuoteQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +441,7 @@
 				47706EFD1BF9C90200C2E2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

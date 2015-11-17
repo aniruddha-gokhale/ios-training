@@ -25,10 +25,12 @@
     self.ans1 = self.movieArray[idx][@"ans1"];
     self.ans2 = self.movieArray[idx][@"ans2"];
     self.ans3 = self.movieArray[idx][@"ans3"];
+    self.tip = self.movieArray[idx][@"tip"];
     
     if (idx == 0) {
         self.correctCount = 0;
         self.incorrectCount = 0;
+         self.tipCount = 0;
     }
 }
 - (id)initWithQuiz:(NSString*)plistName

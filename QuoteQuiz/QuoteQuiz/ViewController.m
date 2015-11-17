@@ -87,6 +87,13 @@
     self.answer1Button.hidden = NO;
     self.answer2Button.hidden = NO;
     self.answer3Button.hidden = NO;
+    
+    
+    if (self.quiz.tipCount < 3) {
+        self.infoButton.hidden = NO;
+    } else {
+        self.infoButton.hidden = YES;
+    }
 }
 
 - (void)checkAnswer
@@ -141,5 +148,18 @@
 - (IBAction)startAgain:(id)sender
 {
     [self nextQuizItem];
+}
+
+- (void)quizTipDidFinish:(QuizTipViewController *) controller {
+    [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"TipModal"]) {
+        QuizTipViewController * detailViewController = (QuizTipViewController *) segue.destinationViewController;
+        detailViewController.delegate = self;
+        detailViewController.tipText = self.quiz.tip;
+    }
 }
 @end
