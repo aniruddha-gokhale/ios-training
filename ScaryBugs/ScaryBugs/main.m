@@ -2,15 +2,17 @@
 //  main.m
 //  ScaryBugs
 //
-//  Created by GDB Consultants on 17/11/15.
-//  Copyright (c) 2015 GDB Consultants. All rights reserved.
+//  Created by Jorge Jordán Arenas on 04/02/14.
+//
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
+#import "RWTAppDelegate.h"
+
+int main(int argc, char * argv[])
+{
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RWTAppDelegate class]));
     }
 }
