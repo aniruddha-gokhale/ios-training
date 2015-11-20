@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4748F56F1BFDDE4C0018EDE4 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748F56E1BFDDE4C0018EDE4 /* logo1.png */; };
-		4748F5721BFDE0940018EDE4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4748F5711BFDE0940018EDE4 /* SVProgressHUD.m */; };
-		4748F5741BFDE0F50018EDE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4748F5731BFDE0F50018EDE4 /* QuartzCore.framework */; };
-		4748F57B1BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4748F5781BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.m */; };
-		4748F57C1BFDF00F0018EDE4 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4748F57A1BFDF00F0018EDE4 /* SVRadialGradientLayer.m */; };
 		EB544A0718A1876200E34B7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB544A0618A1876200E34B7E /* Foundation.framework */; };
 		EB544A0918A1876200E34B7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB544A0818A1876200E34B7E /* CoreGraphics.framework */; };
 		EB544A0B18A1876200E34B7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB544A0A18A1876200E34B7E /* UIKit.framework */; };
@@ -42,6 +37,9 @@
 		EBA1794618A2CD4900D84ADC /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA1794318A2CD4900D84ADC /* shockedface2_empty.png */; };
 		EBA1794718A2CD4900D84ADC /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA1794418A2CD4900D84ADC /* shockedface2_full.png */; };
 		EBA1794818A2CD4900D84ADC /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA1794518A2CD4900D84ADC /* shockedface2_half.png */; };
+		EBA1795018A41BA800D84ADC /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA1794F18A41BA800D84ADC /* logo1.png */; };
+		EBA1795318A41F3A00D84ADC /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA1795218A41F3A00D84ADC /* SVProgressHUD.m */; };
+		EBA1795518A41F6000D84ADC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA1795418A41F6000D84ADC /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4748F56E1BFDDE4C0018EDE4 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
-		4748F5701BFDE0940018EDE4 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		4748F5711BFDE0940018EDE4 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		4748F5731BFDE0F50018EDE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		4748F5771BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		4748F5781BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		4748F5791BFDF00F0018EDE4 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		4748F57A1BFDF00F0018EDE4 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		EB544A0318A1876200E34B7E /* ScaryBugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaryBugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB544A0618A1876200E34B7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB544A0818A1876200E34B7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +93,10 @@
 		EBA1794318A2CD4900D84ADC /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
 		EBA1794418A2CD4900D84ADC /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
 		EBA1794518A2CD4900D84ADC /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+		EBA1794F18A41BA800D84ADC /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		EBA1795118A41F3A00D84ADC /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		EBA1795218A41F3A00D84ADC /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		EBA1795418A41F6000D84ADC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4748F5741BFDE0F50018EDE4 /* QuartzCore.framework in Frameworks */,
+				EBA1795518A41F6000D84ADC /* QuartzCore.framework in Frameworks */,
 				EB544A0918A1876200E34B7E /* CoreGraphics.framework in Frameworks */,
 				EB544A0B18A1876200E34B7E /* UIKit.framework in Frameworks */,
 				EB544A0718A1876200E34B7E /* Foundation.framework in Frameworks */,
@@ -152,7 +146,7 @@
 		EB544A0518A1876200E34B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4748F5731BFDE0F50018EDE4 /* QuartzCore.framework */,
+				EBA1795418A41F6000D84ADC /* QuartzCore.framework */,
 				EB544A0618A1876200E34B7E /* Foundation.framework */,
 				EB544A0818A1876200E34B7E /* CoreGraphics.framework */,
 				EB544A0A18A1876200E34B7E /* UIKit.framework */,
@@ -248,8 +242,8 @@
 		EBA1793A18A2CC8100D84ADC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4748F5701BFDE0940018EDE4 /* SVProgressHUD.h */,
-				4748F5711BFDE0940018EDE4 /* SVProgressHUD.m */,
+				EBA1795118A41F3A00D84ADC /* SVProgressHUD.h */,
+				EBA1795218A41F3A00D84ADC /* SVProgressHUD.m */,
 				EBA1793B18A2CD0000D84ADC /* RWTRateView.h */,
 				EBA1793C18A2CD0000D84ADC /* RWTRateView.m */,
 			);
@@ -259,10 +253,6 @@
 		EBA1793E18A2CD0300D84ADC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4748F5771BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.h */,
-				4748F5781BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.m */,
-				4748F5791BFDF00F0018EDE4 /* SVRadialGradientLayer.h */,
-				4748F57A1BFDF00F0018EDE4 /* SVRadialGradientLayer.m */,
 				EBA1793F18A2CD1300D84ADC /* RWTUIImageExtras.h */,
 				EBA1794018A2CD1300D84ADC /* RWTUIImageExtras.m */,
 			);
@@ -272,7 +262,7 @@
 		EBA1794218A2CD2200D84ADC /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				4748F56E1BFDDE4C0018EDE4 /* logo1.png */,
+				EBA1794F18A41BA800D84ADC /* logo1.png */,
 				EBA1794318A2CD4900D84ADC /* shockedface2_empty.png */,
 				EBA1794418A2CD4900D84ADC /* shockedface2_full.png */,
 				EBA1794518A2CD4900D84ADC /* shockedface2_half.png */,
@@ -369,7 +359,7 @@
 				EB544A5418A19B1400E34B7E /* ladybugThumb.jpg in Resources */,
 				EB544A5618A19B1400E34B7E /* potatoBugThumb.jpg in Resources */,
 				EBA1794818A2CD4900D84ADC /* shockedface2_half.png in Resources */,
-				4748F56F1BFDDE4C0018EDE4 /* logo1.png in Resources */,
+				EBA1795018A41BA800D84ADC /* logo1.png in Resources */,
 				EB544A5518A19B1400E34B7E /* potatoBug.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,12 +384,10 @@
 				EBA1794118A2CD1300D84ADC /* RWTUIImageExtras.m in Sources */,
 				EB544A1718A1876200E34B7E /* RWTAppDelegate.m in Sources */,
 				EB544A4518A18E2E00E34B7E /* RWTScaryBugDoc.m in Sources */,
-				4748F57B1BFDF00F0018EDE4 /* SVIndefiniteAnimatedView.m in Sources */,
-				4748F5721BFDE0940018EDE4 /* SVProgressHUD.m in Sources */,
+				EBA1795318A41F3A00D84ADC /* SVProgressHUD.m in Sources */,
 				EB544A1318A1876200E34B7E /* main.m in Sources */,
 				EB544A1D18A1876200E34B7E /* RWTMasterViewController.m in Sources */,
 				EB544A2018A1876200E34B7E /* RWTDetailViewController.m in Sources */,
-				4748F57C1BFDF00F0018EDE4 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +515,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
 				INFOPLIST_FILE = "ScaryBugs/ScaryBugs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -540,7 +530,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
 				INFOPLIST_FILE = "ScaryBugs/ScaryBugs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

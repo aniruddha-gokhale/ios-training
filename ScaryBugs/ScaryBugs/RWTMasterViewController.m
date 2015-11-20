@@ -91,8 +91,6 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [_bugs removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
 
@@ -108,11 +106,10 @@
     detailController.detailItem = bug;
 }
 
--(void)addTapped:(id)sender{
-    
-    RWTScaryBugDoc *newDoc =[[RWTScaryBugDoc alloc]initWithTitle:@"New Bug" rating:0 thumbImage:nil fullImage:nil];
-    
+- (void)addTapped:(id)sender {
+    RWTScaryBugDoc *newDoc = [[RWTScaryBugDoc alloc] initWithTitle:@"New Bug" rating:0 thumbImage:nil fullImage:nil];
     [_bugs addObject:newDoc];
+    
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_bugs.count-1 inSection:0];
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:YES];
@@ -120,4 +117,5 @@
     [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
     [self performSegueWithIdentifier:@"MySegue" sender:self];
 }
+
 @end
