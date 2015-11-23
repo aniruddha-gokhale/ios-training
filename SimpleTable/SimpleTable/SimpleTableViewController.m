@@ -24,20 +24,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    /*tabelData=[NSArray arrayWithObjects:@"Egg Benedict",@"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    tabelData=[NSArray arrayWithObjects:@"Egg Benedict",@"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     
     thumbnails=[NSArray arrayWithObjects: @"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg", @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg", nil];
     
-    Time =[NSArray arrayWithObjects:@"30min", @"20min", @"40min", @"20min", @"20min", @"35min", @"40min", @"15min", @"25min", @"10min", @"30min", @"30min", @"10min", @"40min", @"45min", @"35min", nil];*/
+    Time =[NSArray arrayWithObjects:@"30min", @"20min", @"40min", @"20min", @"20min", @"35min", @"40min", @"15min", @"25min", @"10min", @"30min", @"30min", @"10min", @"40min", @"45min", @"35min", nil];
 
-    
+   /*
     NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
     
     // Load the file content and read the data into arrays
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     tabelData = [dict objectForKey:@"RecipeName"];
     thumbnails = [dict objectForKey:@"Thumbnail"];
-    Time = [dict objectForKey:@"PrepTime"];
+    Time = [dict objectForKey:@"PrepTime"];*/
     
 }
 - (void)didReceiveMemoryWarning {
@@ -83,4 +83,10 @@
     cell.accessoryType=UITableViewCellAccessoryCheckmark;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    
+    
+    }
 @end
