@@ -1,27 +1,30 @@
 //
-//  RecipeDetailViewController.m
+//  AboutViewController.m
 //  RecipeBook
 //
-//  Created by GDB Consultants on 24/11/15.
+//  Created by GDB Consultants on 25/11/15.
 //  Copyright (c) 2015 GDB Consultants. All rights reserved.
 //
 
-#import "RecipeDetailViewController.h"
+#import "AboutViewController.h"
 
-@interface RecipeDetailViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation RecipeDetailViewController
+@implementation AboutViewController
 
-@synthesize recipeLabel;
-@synthesize recipeName;
+@synthesize webView;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    recipeLabel.text = recipeName;
+     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"about.html" ofType:nil]];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    
+    [webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {

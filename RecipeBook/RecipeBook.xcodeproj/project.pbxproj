@@ -14,6 +14,9 @@
 		475200311C044DD6001F93DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475200301C044DD6001F93DA /* Images.xcassets */; };
 		475200341C044DD6001F93DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475200321C044DD6001F93DA /* LaunchScreen.xib */; };
 		475200401C044DD6001F93DA /* RecipeBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752003F1C044DD6001F93DA /* RecipeBookTests.m */; };
+		477FBA591C0589F00092C4F1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477FBA581C0589F00092C4F1 /* AboutViewController.m */; };
+		477FBA5C1C058A850092C4F1 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 477FBA5A1C058A850092C4F1 /* about.jpg */; };
+		477FBA5D1C058A850092C4F1 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 477FBA5B1C058A850092C4F1 /* about.html */; };
 		47F082961C0469A40014769D /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F082951C0469A40014769D /* RecipeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,10 @@
 		475200391C044DD6001F93DA /* RecipeBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4752003E1C044DD6001F93DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4752003F1C044DD6001F93DA /* RecipeBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeBookTests.m; sourceTree = "<group>"; };
+		477FBA571C0589F00092C4F1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		477FBA581C0589F00092C4F1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		477FBA5A1C058A850092C4F1 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		477FBA5B1C058A850092C4F1 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		47F082941C0469A40014769D /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		47F082951C0469A40014769D /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +101,8 @@
 				475200231C044DD6001F93DA /* Supporting Files */,
 				47F082941C0469A40014769D /* RecipeDetailViewController.h */,
 				47F082951C0469A40014769D /* RecipeDetailViewController.m */,
+				477FBA571C0589F00092C4F1 /* AboutViewController.h */,
+				477FBA581C0589F00092C4F1 /* AboutViewController.m */,
 			);
 			path = RecipeBook;
 			sourceTree = "<group>";
@@ -101,6 +110,8 @@
 		475200231C044DD6001F93DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				477FBA5A1C058A850092C4F1 /* about.jpg */,
+				477FBA5B1C058A850092C4F1 /* about.html */,
 				475200241C044DD6001F93DA /* Info.plist */,
 				475200251C044DD6001F93DA /* main.m */,
 			);
@@ -207,6 +218,8 @@
 				4752002F1C044DD6001F93DA /* Main.storyboard in Resources */,
 				475200341C044DD6001F93DA /* LaunchScreen.xib in Resources */,
 				475200311C044DD6001F93DA /* Images.xcassets in Resources */,
+				477FBA5D1C058A850092C4F1 /* about.html in Resources */,
+				477FBA5C1C058A850092C4F1 /* about.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4752002C1C044DD6001F93DA /* ViewController.m in Sources */,
+				477FBA591C0589F00092C4F1 /* AboutViewController.m in Sources */,
 				47F082961C0469A40014769D /* RecipeDetailViewController.m in Sources */,
 				475200291C044DD6001F93DA /* AppDelegate.m in Sources */,
 				475200261C044DD6001F93DA /* main.m in Sources */,
