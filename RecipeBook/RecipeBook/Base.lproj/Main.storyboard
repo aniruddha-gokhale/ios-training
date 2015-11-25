@@ -16,11 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="nSq-2C-ni6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="47" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="nSq-2C-ni6">
+                                <rect key="frame" x="6" y="58" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="JYY-57-RyQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="Xdf-zS-BBq"/>
+                                    </connections>
+                                </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" id="sVd-cQ-jbH">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" rowHeight="47" id="sVd-cQ-jbH">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sVd-cQ-jbH" id="Ug2-pC-hkp">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -40,8 +48,36 @@
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Book" id="Blh-VC-npl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="2Dp-X4-aQL" id="OeQ-WN-L4i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="OX8-5G-o5o">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="G4h-fZ-azW"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="zHx-pf-VTq"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="56B-wc-WQk"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="aTZ-OH-vr6"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="mfO-fU-dcX">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="cQ4-Cj-HzN"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="ztg-5I-qRi"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="HHx-Ab-foD"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="tMr-oB-xo3"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="2Dp-X4-aQL">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="YJR-PJ-iB2"/>
+                        <outlet property="searchBar" destination="JYY-57-RyQ" id="8Oy-7S-BwJ"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="NZF-Sm-Isz"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="ydi-eW-o9W"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="fJx-NR-Upw"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="702.5" y="-784.5"/>
         </scene>

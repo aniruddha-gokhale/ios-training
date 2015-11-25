@@ -16,6 +16,7 @@
 @implementation ViewController{
     
      NSArray *recipes;
+     NSArray *searchResults;
 }
 
 @synthesize tableView;
@@ -33,7 +34,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [recipes count];
+    if(tableView==self.searchDisplayController.searchResultsTableView){
+        
+        return [searchResults count];
+    }else{
+        
+        return [recipes count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -46,15 +53,51 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    if(tableView==self.searchDisplayController.searchResultsTableView){
+    cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
+    }else{
+        cell.textLabel.text=[recipes objectAtIndex:indexPath.row];
+    }
     return cell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         RecipeDetailViewController *destViewController = segue.destinationViewController;
-        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+        
+        NSIndexPath *indexPath = nil;
+        
+        if ([self.searchDisplayController isActive]) {
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            destViewController.recipeName = [searchResults objectAtIndex:indexPath.row];
+            
+        } else {
+            indexPath = [self.tableView indexPathForSelectedRow];
+            destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+        }
+    }
+    
+}
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope{
+    
+    NSPredicate *resultPredicate=[NSPredicate predicateWithFormat:@"SELF contains[cd] %@",searchText];
+    
+    searchResults=[recipes filteredArrayUsingPredicate:resultPredicate];
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
+    
+    [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles]objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        [self performSegueWithIdentifier: @"showRecipeDetail" sender: self];
     }
 }
+
+
 @end
