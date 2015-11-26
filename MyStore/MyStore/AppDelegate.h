@@ -2,12 +2,11 @@
 //  AppDelegate.h
 //  MyStore
 //
-//  Created by GDB Consultants on 25/11/15.
-//  Copyright (c) 2015 GDB Consultants. All rights reserved.
+//  Created by Simon on 9/12/12.
+//  Copyright (c) 2012 Appcoda. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -20,6 +19,4 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
-
 @end
-
