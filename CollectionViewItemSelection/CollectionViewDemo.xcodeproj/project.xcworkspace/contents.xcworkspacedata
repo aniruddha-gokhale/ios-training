@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RecipePhoto.xcodeproj">
+      location = "self:CollectionViewDemo.xcodeproj">
    </FileRef>
 </Workspace>
