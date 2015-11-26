@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47F611131C07285300C5A309 /* footer_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F611111C07285300C5A309 /* footer_banner.png */; };
+		47F611141C07285300C5A309 /* header_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F611121C07285300C5A309 /* header_banner.png */; };
+		47F611171C072A2200C5A309 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F611161C072A2200C5A309 /* Header.m */; };
 		F44B278316A29C7200746E64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B278216A29C7200746E64 /* UIKit.framework */; };
 		F44B278516A29C7200746E64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B278416A29C7200746E64 /* Foundation.framework */; };
 		F44B278716A29C7200746E64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44B278616A29C7200746E64 /* CoreGraphics.framework */; };
@@ -38,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47F611111C07285300C5A309 /* footer_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer_banner.png; sourceTree = "<group>"; };
+		47F611121C07285300C5A309 /* header_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_banner.png; sourceTree = "<group>"; };
+		47F611151C072A2200C5A309 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		47F611161C072A2200C5A309 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		F44B277E16A29C7200746E64 /* RecipePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44B278216A29C7200746E64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F44B278416A29C7200746E64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +124,8 @@
 		F44B278816A29C7200746E64 /* RecipePhoto */ = {
 			isa = PBXGroup;
 			children = (
+				47F611111C07285300C5A309 /* footer_banner.png */,
+				47F611121C07285300C5A309 /* header_banner.png */,
 				F44B27D116A2FA3100746E64 /* photo-frame.png */,
 				F44B27AD16A2C0B800746E64 /* white_chocolate_donut.jpg */,
 				F44B27AE16A2C0B800746E64 /* ham_and_egg_sandwich.jpg */,
@@ -139,6 +148,8 @@
 				F44B27A516A2AD6500746E64 /* RecipeCollectionViewController.h */,
 				F44B27A616A2AD6500746E64 /* RecipeCollectionViewController.m */,
 				F44B279A16A29C7300746E64 /* MainStoryboard.storyboard */,
+				47F611151C072A2200C5A309 /* Header.h */,
+				47F611161C072A2200C5A309 /* Header.m */,
 				F44B278916A29C7200746E64 /* Supporting Files */,
 			);
 			path = RecipePhoto;
@@ -210,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44B278D16A29C7200746E64 /* InfoPlist.strings in Resources */,
+				47F611131C07285300C5A309 /* footer_banner.png in Resources */,
 				F44B279516A29C7200746E64 /* Default.png in Resources */,
 				F44B279716A29C7200746E64 /* Default@2x.png in Resources */,
 				F44B279916A29C7200746E64 /* Default-568h@2x.png in Resources */,
@@ -226,6 +238,7 @@
 				F44B27C716A2C0BB00746E64 /* vegetable_curry.jpg in Resources */,
 				F44B27C816A2C0BB00746E64 /* japanese_noodle_with_pork.jpg in Resources */,
 				F44B27C916A2C0BB00746E64 /* thai_shrimp_cake.jpg in Resources */,
+				47F611141C07285300C5A309 /* header_banner.png in Resources */,
 				F44B27CA16A2C0BB00746E64 /* angry_birds_cake.jpg in Resources */,
 				F44B27CB16A2C0BB00746E64 /* green_tea.jpg in Resources */,
 				F44B27CC16A2C0BB00746E64 /* instant_noodle_with_egg.jpg in Resources */,
@@ -241,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F611171C072A2200C5A309 /* Header.m in Sources */,
 				F44B278F16A29C7200746E64 /* main.m in Sources */,
 				F44B279316A29C7200746E64 /* AppDelegate.m in Sources */,
 				F44B27A716A2AD6500746E64 /* RecipeCollectionViewController.m in Sources */,
@@ -360,6 +374,7 @@
 				F44B27A416A29C7300746E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
